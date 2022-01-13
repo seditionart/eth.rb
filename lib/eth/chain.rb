@@ -125,7 +125,7 @@ module Eth
     # @param chain_id [Integer] the chain id the signature was generated on.
     # @return [Integer] the signature's `v` value.
     def to_v(recovery_id, chain_id = ETHEREUM)
-      v = 2 * chain_id + 35 + recovery_id
+      v = 27 + recovery_id
     end
 
     # Converst a `v` value into a chain ID. This does not work for legacy signatures

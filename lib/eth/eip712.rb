@@ -127,6 +127,8 @@ module Eth
         end
       end
 
+      p encoded_types, encoded_values
+
       # all data is abi-encoded
       return Abi.encode encoded_types, encoded_values
     end
